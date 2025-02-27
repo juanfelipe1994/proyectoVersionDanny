@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Huéspedes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Gran Hotel España</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="paginaprincipalindex.html">Página Principal Hotel</a></li>
+            <li><a href="registrar_huesped.html">Registrar Huésped</a></li>
+            <li><a href="crear_reserva.html">Crear Reserva</a></li>
+            <li><a href="gestionar_registros.html">Gestionar Registros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Registrar Huésped</h2>
+        <form id="form-registrar-huesped">
+            <label for="id_huesped">Cédula:</label>
+            <input type="text" id="id_huesped" name="id_huesped" required pattern="\d{8,}" title="La cédula debe tener al menos 8 dígitos.">
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            
+            <label for="correo_electronico">Correo Electrónico:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" required>
+            
+            <label for="nacionalidad">Nacionalidad:</label>
+            <input type="text" id="nacionalidad" name="nacionalidad" required>
+            
+            <label for="fecha_de_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_de_nacimiento" name="fecha_de_nacimiento" required>
+            
+            <button type="submit">
+                <span>Registrar Huésped</span>
+            </button>
+        </form>
+    </main>
+    <script src="registrar_huesped.js"></script>
+</body>
+</html>

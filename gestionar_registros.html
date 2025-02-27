@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Huéspedes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Gran Hotel España</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="paginaprincipalindex.html">Página Principal Hotel</a></li>
+            <li><a href="registrar_huesped.html">Registrar Huésped</a></li>
+            <li><a href="crear_reserva.html">Crear Reserva</a></li>
+            <li><a href="gestionar_registros.html">Gestionar Registros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="gestionar-registros">
+            <h2>Gestionar Registros</h2>
+            <form id="form-gestionar-registros" action="gestionar_registros.php" method="POST">
+                <label for="id_registro">ID Registro:</label>
+                <input type="text" id="id_registro" name="id_registro" required>
+                
+                <label for="fecha_de_entrada">Fecha de Entrada:</label>
+                <input type="date" id="fecha_de_entrada" name="fecha_de_entrada" required>
+                
+                <label for="fecha_de_salida">Fecha de Salida:</label>
+                <input type="date" id="fecha_de_salida" name="fecha_de_salida" required>
+                
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="observaciones"></textarea>
+                
+                <button type="submit">
+                    <span>Registrar Entrada/Salida</span>
+                </button>
+            </form>
+            
+            <h3>Buscar y Editar Registros</h3>
+            <form id="form-buscar-registros" action="gestionar_registros.php" method="GET">
+                <label for="buscar_id_registro">Buscar por ID Registro:</label>
+                <input type="text" id="buscar_id_registro" name="buscar_id_registro">
+                <button type="submit">
+                    <span>Buscar</span>
+                </button>
+            </form>
+            <div id="resultados-registros"></div>
+        </section>
+    </main>
+    <script src="estructura.js"></script>
+</body>
+</html>

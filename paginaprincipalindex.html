@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Hotel</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>INFORMACION DEL HOTEL</h1>
+        <h2>precios y disponibilidad</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>tipo de id_habitacion</th>
+                    <th>imagen de habitaciòn</th>
+                    <th>precio por noche</th>
+                    <th>parqueadero</th>
+                    <th>disponibilidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>habitacion individual</td>
+                    <td><img src="individual.jpg" alt="Habitación Individual" class="img-habitacion"></td>
+                    <td>$ 100.000</td>
+                    <td>si</td>
+                    <td>disponible</td>
+                </tr>
+                <tr> 
+                    <td>habitacion doble</td>
+                    <td><img src="habitacion doble cama.jpg" alt="Habitación Individual" class="img-habitacion"></td>
+                    <td>$ 180.000</td>
+                    <td>si</td>
+                    <td>disponible</td>
+                </tr>
+                <tr> 
+                    <td>habitacion multiple</td>
+                    <td><img src="multiple.jpg" alt="Habitación Individual" class="img-habitacion"></td>
+                    <td>$ 300.000</td>
+                    <td>no</td>
+                    <td>disponible</td>
+                </tr>
+                <tr> 
+                    <td>habitacion individual economica</td>
+                    <td><img src="h economica.jpg" alt="Habitación Individual" class="img-habitacion"></td>
+                    <td>$ 70.000</td>
+                    <td>no</td>
+                    <td>no disponible</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="reserva-button">Información de reserva</button>
+        <div id="reservation-info" class="hidden"></div>
+        <br>
+        <button id="salir-button" >salir</button>
+    </div>
+    <script src="estructurapaginaprincipal.js"></script>
+</body>
+</html>

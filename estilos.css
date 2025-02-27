@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('imagenhotel.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #f4f4f9;
+    color: #ffffff;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1em;
+    max-width: 900px;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 1em;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+thead th {
+    background-color: #09f;
+    color: #ffffff;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #7e7676;
+}
+
+tbody tr:hover {
+    background-color: #6200A9;
+}
+
+td, th {
+    padding: 12px 15px;
+    border: 1px solid #ffffff;
+}
+
+.cell-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-habitacion {
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+}
+
+button {
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+    border-radius: 1em;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+}
+
+button:hover {
+    background: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+.img-habitacion:active {
+    transform: scale(1.1); /* Se agranda un poco menos al hacer clic */
+}
+.img-habitacion {
+    width: 100px; /* Tamaño inicial */
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de agrandamiento al pasar el mouse */
+.img-habitacion:hover {
+    transform: scale(3.9); /* Agranda la imagen un 30% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+}

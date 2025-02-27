@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Control de Huéspedes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Gran Hotel España</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="paginaprincipalindex.html">pagina principal hotel</a></li>
+            <li><a href="registrar_huesped.html">Registrar Huésped</a></li>
+            <li><a href="crear_reserva.html">Crear Reserva</a></li>
+            <li><a href="gestionar_registros.html">Gestionar Registros</a></li>
+
+        </ul>
+    </nav>
+    <main>   
+        <section id="crear-reserva">
+            <h2>Crear Reserva</h2>
+            <form id="form-crear-reserva">
+                <label for="id_reserva">ID Reserva:</label>
+                <input type="text" id="id_reserva" name="id_reserva" required>
+                
+                <label for="fecha_de_reserva">Fecha de Reserva:</label>
+                <input type="date" id="fecha_de_reserva" name="fecha_de_reserva" required>
+                
+                <label for="fecha_de_salida">Fecha de Salida:</label>
+                <input type="date" id="fecha_de_salida" name="fecha_de_salida" required>
+                
+                <label for="numero_de_huespedes">Número de Huéspedes:</label>
+                <input type="number" id="numero_de_huespedes" name="numero_de_huespedes" required>
+                
+                <label for="precio_total">Precio Total:</label>
+                <input type="number" step="0.01" id="precio_total" name="precio_total" required>
+                
+                <label for="forma_de_pago">Forma de Pago:</label>
+                <select id="forma_de_pago" name="forma_de_pago" required>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="transferencia">Transferencia</option>
+                </select>
+                
+                <label for="id_habitacion">ID Habitación:</label>
+                <input type="text" id="id_habitacion" name="id_habitacion" required>
+                
+                <button type="submit">
+                    <span>Crear Reserva</span>
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="estructura.js"></script>
+</body>
+</html>
